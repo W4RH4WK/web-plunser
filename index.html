@@ -16,38 +16,22 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<style>
-		@font-face{
-			font-familiy: "Montserrat";url:("Montserrat-VariableFont_wght.tff");display: switch;}
-		body{height: 100vh;	width: 100vw;
-			margin: 0;padding: 0;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: space-around;
-			overflow: hidden;
+		@font-face{font-familiy:"Montserrat";url:("Montserrat-VariableFont_wght.tff");font-display: swap;}
+		
+		body{font-family: "Montserrat"; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+		
+		#background{position:fixed;right:-5vw;bottom:-5vw;width:40vw;height:40vw;opacity:.05;}
+		#logo{
+			width: 70vw;
 		}
 		p{
-			font-family: Montserrat;
-			text-align: center;
-			padding: 0; margin: 0;
-			backdrop-filter: blur(8px);
-			width: 100%;
-			padding-left: 15px;
-			padding-right: 15px;
+			font-size: 2rem;
 		}
-		#logo svg{
-			width: 60vw;
+		.klein{
+			font-size: 1rem;
 		}
-		#background{
-			position: fixed;
-			opacity: 10%;
-			bottom: -20vh;
-			right: -20vh;
-		}
-		#background svg{
-			height: 70vh;
-			width: 70vh;
-		}
+		.klein a{padding-left: 5px; padding-right: 5px; font-weight: 200; text-decoration: none; color: black}
+		.klein a:hover{font-weight: 500;}
 	</style>
 </head>
 <body>
@@ -121,21 +105,23 @@
 		</svg>
 	</div>
 	<div>
-		<p style="font-size: 60px; font-weight: 200; line-height: 1em;">Haller Innsbrücke 23<br>6070 Ampass</p>
-		<p style="font-size: 40px; font-weight: 200; line-height: 1em;">T +43 5223 43888<br>E office@plunser.at</p>
+		<p>Haller Innsbrücke 23<br>6070 Ampass<br>T +43 5223 43888<br>E office@plunser.at</p>
 	</div>
 	<div>
-		<p style="font-size: 60px; font-weight: 200; line-height: 1em;">Martin Plunser</p>
-		<p style="font-size: 40px; font-weight: 200; line-height: 1em;">Inhaber<br>T +43 676 7081579</p>
+		<p>Martin Plunser<br>Inhaber<br>T +43 676 7081579</p>
 	</div>
 	<div>
-		<p style="font-size: 30px; font-weight: 200; line-height: 1em;">
+		<p class="klein">
 			<strong>UID-NR: </strong>ATU82500116<br>
 			<strong>Gewerbeaufsichtsbehörde: </strong>Bezirkshauptmannschaft Innsbruck<br>
 			<strong>Mitgliedschaften: </strong>Mitglied der Wirtschaftskammer Tirol<br>
 			<strong>Unternehmensgegenstand: </strong>Lüftungstechnik<br>
 			<strong>Bankverbindung: </strong> Raiffeisenbank Regionalbank Hall in Tirol
 		</p>	
+	</div>
+	<div>
+		<p class="klein"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></p>
+	
 	</div>
 </body>
 </html>
